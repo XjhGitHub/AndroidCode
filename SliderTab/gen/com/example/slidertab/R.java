@@ -26,6 +26,7 @@ public final class R {
         public static final int invalued=0x7f020002;
         public static final int normal=0x7f020003;
         public static final int select=0x7f020004;
+        public static final int tab_indicator_holo=0x7f020005;
     }
     public static final class id {
         public static final int action_settings=0x7f080003;
