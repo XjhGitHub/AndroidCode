@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 正常效果 -->
+    <item android:drawable="@drawable/normal" android:state_pressed="false"/>
+    <!-- 按下效果 -->
+    <item android:drawable="@drawable/select" android:state_pressed="true"/>
+    <!-- 选中效果 -->
+    <item android:drawable="@drawable/select" android:state_selected="true"/>
+    <!-- 无效效果 -->
+    <item android:drawable="@drawable/invalued" android:state_enabled="false"/>
+
+</selector>
