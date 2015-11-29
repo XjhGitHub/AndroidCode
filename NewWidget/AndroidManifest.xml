@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newwidget"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <receiver android:name=".MyAppWidgetProvider" >
+            <intent-filter>
+                <!-- widget属性 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <!-- 接收更新图片广播 -->
+                <action android:name="com.example.newwidget.UPDATE_PIC"/>
+            </intent-filter>
+            <!-- 指定widget资源文件 -->
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/provider_config"/>
+        </receiver>
+        
+        <service android:name=".MyAppWidgetService" >
+            <intent-filter >
+                <action android:name="com.example.newwidget.MY_WIDGET_SERVICE"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
