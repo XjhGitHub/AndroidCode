@@ -28,7 +28,7 @@ public class SecondFragment extends Fragment implements OnClickListener{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		mView = inflater.inflate(R.layout.first_main, null);
+		mView = inflater.inflate(R.layout.second_main, null);
 		mContext = mView.getContext();
 		initView();
 		return mView;

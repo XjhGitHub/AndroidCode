@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         
+        <activity android:name="com.example.testdemo.first.listview.ListViewActivity"></activity>
+        <activity android:name="com.example.testdemo.first.picker.PickerActivity"></activity>
+        <activity android:name="com.example.testdemo.first.gridview.GridViewActivity"></activity>
+        <activity android:name="com.example.testdemo.first.base.SpinnerActivity"></activity>
         <activity android:name="com.example.testdemo.second.dialog.DialogActivity"></activity>
         <activity android:name="com.example.testdemo.second.toast.ToastActivity"></activity>
         <activity android:name="com.example.testdemo.second.notify.NotifyActivity"></activity>

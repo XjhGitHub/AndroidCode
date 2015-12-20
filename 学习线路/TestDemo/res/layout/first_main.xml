@@ -12,27 +12,27 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/fir_button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Toast" />
+                android:text="List(BaseApapter/SimpleAdapter)" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/fir_button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dailog" />
+                android:text="Picker(Normal/Dialog)" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/fir_button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Notification" />
+                android:text="GridView" />
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/fir_button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Menu" />
+                android:text="Spinner" />
         </LinearLayout>
     </ScrollView>
 
