@@ -10,7 +10,9 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.testdemo.first.base.ProgressActivity;
 import com.example.testdemo.first.base.SpinnerActivity;
+import com.example.testdemo.first.base.WebViewActivity;
 import com.example.testdemo.first.gridview.GridViewActivity;
 import com.example.testdemo.first.listview.ListViewActivity;
 import com.example.testdemo.first.picker.PickerActivity;
@@ -23,6 +25,8 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	private Button fir_button2;
 	private Button fir_button3;
 	private Button fir_button4;
+	private Button fir_button5;
+	private Button fir_button6;
 	
 	private Context mContext;
 	@Override
@@ -46,6 +50,12 @@ public class FirstFragment extends Fragment implements OnClickListener{
 
 		fir_button4 = (Button) mView.findViewById(R.id.fir_button4);
 		fir_button4.setOnClickListener(this);
+		
+		fir_button5 = (Button) mView.findViewById(R.id.fir_button5);
+		fir_button5.setOnClickListener(this);
+		
+		fir_button6 = (Button) mView.findViewById(R.id.fir_button6);
+		fir_button6.setOnClickListener(this);
 	}
 
 	@Override
@@ -62,6 +72,12 @@ public class FirstFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.fir_button4:
 			startActivity(new Intent(mContext, SpinnerActivity.class));
+			break;
+		case R.id.fir_button5:
+			startActivity(new Intent(mContext, ProgressActivity.class));
+			break;
+		case R.id.fir_button6:
+			startActivity(new Intent(mContext, WebViewActivity.class));
 			break;
 		default:
 			break;

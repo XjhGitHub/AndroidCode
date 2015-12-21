@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.testdemo.second.base.StaticFragmentActivity;
 import com.example.testdemo.second.dialog.DialogActivity;
 import com.example.testdemo.second.menu.MenuActivity;
 import com.example.testdemo.second.notify.NotifyActivity;
@@ -22,6 +23,8 @@ public class SecondFragment extends Fragment implements OnClickListener{
 	private Button button2;
 	private Button button3;
 	private Button button4;
+	private Button button5;
+	private Button button6;
 	
 	private Context mContext;
 	
@@ -46,6 +49,12 @@ public class SecondFragment extends Fragment implements OnClickListener{
 
 		button4 = (Button) mView.findViewById(R.id.button4);
 		button4.setOnClickListener(this);
+		
+		button5 = (Button) mView.findViewById(R.id.button5);
+		button5.setOnClickListener(this);
+		
+		button6 = (Button) mView.findViewById(R.id.button6);
+		button6.setOnClickListener(this);
 	}
 
 	@Override
@@ -61,6 +70,12 @@ public class SecondFragment extends Fragment implements OnClickListener{
 			startActivity(new Intent(mContext, NotifyActivity.class));
 			break;
 		case R.id.button4:
+			startActivity(new Intent(mContext, MenuActivity.class));
+			break;
+		case R.id.button5:
+			startActivity(new Intent(mContext, StaticFragmentActivity.class));
+			break;
+		case R.id.button6:
 			startActivity(new Intent(mContext, MenuActivity.class));
 			break;
 		default:

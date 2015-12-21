@@ -33,6 +33,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Spinner" />
+             <Button
+                android:id="@+id/fir_button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProgressBar" />
+             <Button
+                android:id="@+id/fir_button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WebView" />
         </LinearLayout>
     </ScrollView>
 
