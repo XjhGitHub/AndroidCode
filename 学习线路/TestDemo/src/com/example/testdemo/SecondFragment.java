@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.testdemo.second.base.DynamicFragmentActivity;
 import com.example.testdemo.second.base.StaticFragmentActivity;
 import com.example.testdemo.second.dialog.DialogActivity;
 import com.example.testdemo.second.menu.MenuActivity;
@@ -76,7 +77,7 @@ public class SecondFragment extends Fragment implements OnClickListener{
 			startActivity(new Intent(mContext, StaticFragmentActivity.class));
 			break;
 		case R.id.button6:
-			startActivity(new Intent(mContext, MenuActivity.class));
+			startActivity(new Intent(mContext, DynamicFragmentActivity.class));
 			break;
 		default:
 			break;

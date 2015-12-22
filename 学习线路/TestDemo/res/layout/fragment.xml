@@ -8,12 +8,16 @@
         android:id="@+id/fragment_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Fragment中的TextView" />
 
     <Button
         android:id="@+id/fragment_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
-
+        android:text="获取Activity传递的参数" />
+    <Button
+        android:id="@+id/fragment_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过回调向Activity传递的参数" />
 </LinearLayout>

@@ -38,6 +38,7 @@
         <activity android:name="com.example.testdemo.second.menu.OptionMenuActivity"></activity>
         <activity android:name="com.example.testdemo.second.menu.SubMenuActivity"></activity>
         <activity android:name="com.example.testdemo.second.base.StaticFragmentActivity"></activity>
+        <activity android:name="com.example.testdemo.second.base.DynamicFragmentActivity"></activity>
     </application>
 
 </manifest>
