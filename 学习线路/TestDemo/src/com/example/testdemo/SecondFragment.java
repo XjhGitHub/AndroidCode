@@ -10,9 +10,9 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.testdemo.first.base.ViewFlipperActivity;
 import com.example.testdemo.second.base.DynamicFragmentActivity;
 import com.example.testdemo.second.base.StaticFragmentActivity;
+import com.example.testdemo.second.base.ViewFlipperActivity;
 import com.example.testdemo.second.dialog.DialogActivity;
 import com.example.testdemo.second.menu.MenuActivity;
 import com.example.testdemo.second.notify.NotifyActivity;
