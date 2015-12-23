@@ -1,15 +1,38 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ScrollView
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fir_button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ScrollView Up" />
+
+        <Button
+            android:id="@+id/fir_button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ScrollView Down" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" 
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
             <Button
                 android:id="@+id/fir_button1"
@@ -28,17 +51,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="GridView" />
+
             <Button
                 android:id="@+id/fir_button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Spinner" />
-             <Button
+
+            <Button
                 android:id="@+id/fir_button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ProgressBar" />
-             <Button
+
+            <Button
                 android:id="@+id/fir_button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,4 +72,4 @@
         </LinearLayout>
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

@@ -5,7 +5,12 @@ import java.util.List;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.ViewGroup;
 
+//¶¯Ì¬¼ÓÔØ
+//public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
+//³£×¤
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
 	private List<Fragment> mFragments;
@@ -37,5 +42,18 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 		// TODO Auto-generated method stub
 		return mTitle.get(position);
 	}
+
+	@Override
+	public void destroyItem(ViewGroup container, int position, Object object) {
+		// TODO Auto-generated method stub
+		super.destroyItem(container, position, object);
+	}
+
+	@Override
+	public Object instantiateItem(ViewGroup arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return super.instantiateItem(arg0, arg1);
+	}
+	
 
 }
