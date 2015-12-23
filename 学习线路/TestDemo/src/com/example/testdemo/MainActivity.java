@@ -3,10 +3,12 @@ package com.example.testdemo;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
@@ -19,7 +21,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	private ViewPager mViewPager;
 	private List<Fragment> mFragments;
+	private List<String> mTitle;
 	private FragmentPagerAdapter mAdapter;
+	private PagerTabStrip mTabStrip;
 	private LinearLayout mTab01, mTab02, mTab03, mTab04;
 	private ImageView mImg01, mImg02, mImg03, mImg04;
 	@Override
@@ -37,9 +41,23 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		mTab02.setOnClickListener(this);
 		mTab03.setOnClickListener(this);
 		mTab04.setOnClickListener(this);
+		
+		/*
+		 * 设置PagerTabStrip属性
+		 */
+		mTabStrip.setBackgroundColor(Color.BLACK);
+		mTabStrip.setTextColor(Color.WHITE);
+		mTabStrip.setDrawFullUnderline(false);
+		//设置下线颜色
+		mTabStrip.setTabIndicatorColor(Color.GREEN);
 	}
 	private void initView() {
 		mViewPager = (ViewPager) findViewById(R.id.viewpager);
+		/*
+		 * 使用PagerTabStrip设置标题头
+		 */
+		mTabStrip = (PagerTabStrip) findViewById(R.id.tab);
+		
 		mTab01 = (LinearLayout) findViewById(R.id.tab_01);
 		mTab02 = (LinearLayout) findViewById(R.id.tab_02);
 		mTab03 = (LinearLayout) findViewById(R.id.tab_03);
@@ -50,13 +68,20 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		mImg03 = (ImageView) findViewById(R.id.img_03);
 		mImg04 = (ImageView) findViewById(R.id.img_04);
 		
+		mTitle = new ArrayList<String>();
+		mTitle.add("第一页");
+		mTitle.add("第二页");
+		mTitle.add("第三页");
+		mTitle.add("第四页");
+		
 		mFragments = new ArrayList<Fragment>();
 		mFragments.add(new FirstFragment());
 		mFragments.add(new SecondFragment());
 		mFragments.add(new ThirdFragment());
 		mFragments.add(new ForthFragment());
 		
-		mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), mFragments);
+		mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), 
+				mFragments,mTitle);
 		
 		mViewPager.setAdapter(mAdapter);
 		
