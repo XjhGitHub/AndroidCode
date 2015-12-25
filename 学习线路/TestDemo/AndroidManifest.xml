@@ -29,6 +29,7 @@
         <activity android:name="com.example.testdemo.first.gridview.GridViewActivity"></activity>
         <activity android:name="com.example.testdemo.first.base.SpinnerActivity"></activity>
         <activity android:name="com.example.testdemo.first.base.ProgressActivity"></activity>
+        <activity android:name="com.example.testdemo.first.base.SeekBarActivity"></activity>
         <activity android:name="com.example.testdemo.first.base.WebViewActivity"></activity>
         <activity android:name="com.example.testdemo.second.dialog.DialogActivity"></activity>
         <activity android:name="com.example.testdemo.second.toast.ToastActivity"></activity>
@@ -40,6 +41,7 @@
         <activity android:name="com.example.testdemo.second.base.StaticFragmentActivity"></activity>
         <activity android:name="com.example.testdemo.second.base.DynamicFragmentActivity"></activity>
         <activity android:name="com.example.testdemo.second.base.ViewFlipperActivity"></activity>
+        <activity android:name="com.example.testdemo.second.base.GalleryActivity"></activity>
     </application>
 
 </manifest>

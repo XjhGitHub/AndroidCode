@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.testdemo.second.base.DynamicFragmentActivity;
+import com.example.testdemo.second.base.GalleryActivity;
 import com.example.testdemo.second.base.StaticFragmentActivity;
 import com.example.testdemo.second.base.ViewFlipperActivity;
 import com.example.testdemo.second.dialog.DialogActivity;
@@ -28,6 +29,7 @@ public class SecondFragment extends Fragment implements OnClickListener{
 	private Button button5;
 	private Button button6;
 	private Button button7;
+	private Button button8;
 	
 	private Context mContext;
 	
@@ -61,6 +63,9 @@ public class SecondFragment extends Fragment implements OnClickListener{
 		
 		button7 = (Button) mView.findViewById(R.id.button7);
 		button7.setOnClickListener(this);
+		
+		button8 = (Button) mView.findViewById(R.id.button8);
+		button8.setOnClickListener(this);
 	}
 
 	@Override
@@ -86,6 +91,9 @@ public class SecondFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.button7:
 			startActivity(new Intent(mContext, ViewFlipperActivity.class));
+			break;
+		case R.id.button8:
+			startActivity(new Intent(mContext, GalleryActivity.class));
 			break;
 		default:
 			break;

@@ -16,6 +16,7 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.testdemo.first.base.ProgressActivity;
+import com.example.testdemo.first.base.SeekBarActivity;
 import com.example.testdemo.first.base.SpinnerActivity;
 import com.example.testdemo.first.base.WebViewActivity;
 import com.example.testdemo.first.gridview.GridViewActivity;
@@ -36,6 +37,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	private Button fir_button6;
 	private Button fir_button7;
 	private Button fir_button8;
+	private Button fir_button9;
 	
 	private ScrollView mScrollView;
 	
@@ -73,6 +75,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		
 		fir_button8 = (Button) mView.findViewById(R.id.fir_button8);
 		fir_button8.setOnClickListener(this);
+		
+		fir_button9 = (Button) mView.findViewById(R.id.fir_button9);
+		fir_button9.setOnClickListener(this);
 		
 		mScrollView = (ScrollView) mView.findViewById(R.id.scrollView);
 		mScrollView.setOnTouchListener(new OnTouchListener() {
@@ -145,6 +150,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		case R.id.fir_button8:
 //			mScrollView.scrollTo(0, 30);
 			mScrollView.scrollBy(0, 30);
+			break;
+		case R.id.fir_button9:
+			startActivity(new Intent(mContext, SeekBarActivity.class));
 			break;
 		default:
 			break;

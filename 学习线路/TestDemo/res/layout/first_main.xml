@@ -63,6 +63,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ProgressBar" />
+            
+            <Button
+                android:id="@+id/fir_button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SeekBar" />
 
             <Button
                 android:id="@+id/fir_button6"
