@@ -42,6 +42,7 @@
         <activity android:name="com.example.testdemo.second.base.DynamicFragmentActivity"></activity>
         <activity android:name="com.example.testdemo.second.base.ViewFlipperActivity"></activity>
         <activity android:name="com.example.testdemo.second.base.GalleryActivity"></activity>
+        <activity android:name="com.example.testdemo.third.base.SharedPreferenceActivity"></activity>
     </application>
 
 </manifest>
