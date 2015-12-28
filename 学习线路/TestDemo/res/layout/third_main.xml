@@ -24,13 +24,13 @@
                 android:id="@+id/thi_button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Picker(Normal/Dialog)" />
+                android:text="SQLite" />
 
             <Button
                 android:id="@+id/thi_button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GridView" />
+                android:text="File操作" />
 
             <Button
                 android:id="@+id/thi_button4"

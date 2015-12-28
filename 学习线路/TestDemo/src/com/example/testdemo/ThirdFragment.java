@@ -1,15 +1,5 @@
 package com.example.testdemo;
 
-import com.example.testdemo.second.base.DynamicFragmentActivity;
-import com.example.testdemo.second.base.GalleryActivity;
-import com.example.testdemo.second.base.StaticFragmentActivity;
-import com.example.testdemo.second.base.ViewFlipperActivity;
-import com.example.testdemo.second.dialog.DialogActivity;
-import com.example.testdemo.second.menu.MenuActivity;
-import com.example.testdemo.second.notify.NotifyActivity;
-import com.example.testdemo.second.toast.ToastActivity;
-import com.example.testdemo.third.base.SharedPreferenceActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +9,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.file.FileActivity;
+import com.example.testdemo.second.base.DynamicFragmentActivity;
+import com.example.testdemo.second.base.StaticFragmentActivity;
+import com.example.testdemo.second.menu.MenuActivity;
+import com.example.testdemo.second.notify.NotifyActivity;
+import com.example.testdemo.third.base.SQLiteActivity;
+import com.example.testdemo.third.base.SharedPreferenceActivity;
 
 public class ThirdFragment extends Fragment implements OnClickListener{
 
@@ -69,10 +67,10 @@ public class ThirdFragment extends Fragment implements OnClickListener{
 			startActivity(new Intent(mContext, SharedPreferenceActivity.class));
 			break;
 		case R.id.thi_button2:
-			startActivity(new Intent(mContext, DialogActivity.class));
+			startActivity(new Intent(mContext, SQLiteActivity.class));
 			break;
 		case R.id.thi_button3:
-			startActivity(new Intent(mContext, NotifyActivity.class));
+			startActivity(new Intent(mContext, FileActivity.class));
 			break;
 		case R.id.thi_button4:
 			startActivity(new Intent(mContext, MenuActivity.class));
