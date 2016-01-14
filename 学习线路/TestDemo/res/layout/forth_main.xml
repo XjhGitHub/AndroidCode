@@ -36,7 +36,7 @@
                 android:id="@+id/for_button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Spinner" />
+                android:text="卫星菜单" />
 
             <Button
                 android:id="@+id/for_button5"
