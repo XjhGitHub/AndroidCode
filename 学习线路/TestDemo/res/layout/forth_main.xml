@@ -45,13 +45,13 @@
                 android:text="树形" />
             
             <Button
-                android:id="@+id/for_button9"
+                android:id="@+id/for_button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SeekBar" />
+                android:text="流式布局" />
 
             <Button
-                android:id="@+id/for_button6"
+                android:id="@+id/for_button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="WebView" />

@@ -12,9 +12,9 @@ import android.widget.Button;
 
 import com.example.arcmenu.ArmMenuActivity;
 import com.example.customerview.CustomActivity;
+import com.example.flowlayout.FlowLayoutActivity;
 import com.example.list.ListActivity;
 import com.example.slidingMenu.SlidingActivity;
-import com.example.testdemo.second.base.DynamicFragmentActivity;
 import com.example.treeview.TreeView;
 
 public class ForthFragment extends Fragment implements OnClickListener{
@@ -78,7 +78,7 @@ public class ForthFragment extends Fragment implements OnClickListener{
 			startActivity(new Intent(mContext, TreeView.class));
 			break;
 		case R.id.for_button6:
-			startActivity(new Intent(mContext, DynamicFragmentActivity.class));
+			startActivity(new Intent(mContext, FlowLayoutActivity.class));
 			break;
 		default:
 			break;

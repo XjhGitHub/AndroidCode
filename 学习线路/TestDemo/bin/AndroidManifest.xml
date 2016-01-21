@@ -51,6 +51,7 @@
         <activity android:name="com.example.slidingMenu.SlidingActivity"></activity>
         <activity android:name="com.example.arcmenu.ArmMenuActivity"></activity>
         <activity android:name="com.example.treeview.TreeView"></activity>
+        <activity android:name="com.example.flowlayout.FlowLayoutActivity"></activity>
     	
     </application>
 
