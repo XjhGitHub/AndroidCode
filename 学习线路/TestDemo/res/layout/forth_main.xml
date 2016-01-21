@@ -54,7 +54,7 @@
                 android:id="@+id/for_button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="WebView" />
+                android:text="SurfaceView实现转盘" />
         </LinearLayout>
     </ScrollView>
 

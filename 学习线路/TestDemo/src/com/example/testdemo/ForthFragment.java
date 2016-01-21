@@ -14,6 +14,7 @@ import com.example.arcmenu.ArmMenuActivity;
 import com.example.customerview.CustomActivity;
 import com.example.flowlayout.FlowLayoutActivity;
 import com.example.list.ListActivity;
+import com.example.luckypan.LuckyPanActivity;
 import com.example.slidingMenu.SlidingActivity;
 import com.example.treeview.TreeView;
 
@@ -25,6 +26,7 @@ public class ForthFragment extends Fragment implements OnClickListener{
 	private Button for_button4;
 	private Button for_button5;
 	private Button for_button6;
+	private Button for_button7;
 	private View mView;
 	
 	private Context mContext;
@@ -57,6 +59,9 @@ public class ForthFragment extends Fragment implements OnClickListener{
 		for_button6 = (Button) mView.findViewById(R.id.for_button6);
 		for_button6.setOnClickListener(this);
 		
+		for_button7 = (Button) mView.findViewById(R.id.for_button7);
+		for_button7.setOnClickListener(this);
+		
 	}
 
 	@Override
@@ -79,6 +84,9 @@ public class ForthFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.for_button6:
 			startActivity(new Intent(mContext, FlowLayoutActivity.class));
+			break;
+		case R.id.for_button7:
+			startActivity(new Intent(mContext, LuckyPanActivity.class));
 			break;
 		default:
 			break;
