@@ -55,6 +55,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SurfaceView实现转盘" />
+            <Button
+                android:id="@+id/for_button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView" />
+            <Button
+                android:id="@+id/for_button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刮刮卡" />
         </LinearLayout>
     </ScrollView>
 
