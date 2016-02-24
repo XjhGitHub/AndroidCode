@@ -55,6 +55,7 @@
         <activity android:name="com.example.luckypan.LuckyPanActivity"></activity>
         <activity android:name="com.example.recylerview.RecyclerActivity"></activity>
         <activity android:name="com.example.guaguaka.GuaGuaActivity"></activity>
+        <activity android:name="com.example.testdemo.cpp.CppActivity"></activity>
     	
     </application>
 

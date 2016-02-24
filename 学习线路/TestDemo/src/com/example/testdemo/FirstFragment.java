@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.testdemo.cpp.CppActivity;
 import com.example.testdemo.first.base.ProgressActivity;
 import com.example.testdemo.first.base.SeekBarActivity;
 import com.example.testdemo.first.base.SpinnerActivity;
@@ -38,6 +39,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	private Button fir_button7;
 	private Button fir_button8;
 	private Button fir_button9;
+	private Button fir_button10;
 	
 	private ScrollView mScrollView;
 	
@@ -78,6 +80,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		
 		fir_button9 = (Button) mView.findViewById(R.id.fir_button9);
 		fir_button9.setOnClickListener(this);
+		
+		fir_button10 = (Button) mView.findViewById(R.id.fir_button10);
+		fir_button10.setOnClickListener(this);
 		
 		mScrollView = (ScrollView) mView.findViewById(R.id.scrollView);
 		mScrollView.setOnTouchListener(new OnTouchListener() {
@@ -154,6 +159,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		case R.id.fir_button9:
 			startActivity(new Intent(mContext, SeekBarActivity.class));
 			break;
+		case R.id.fir_button10:
+			startActivity(new Intent(mContext, CppActivity.class));
+			break;	
 		default:
 			break;
 		}
