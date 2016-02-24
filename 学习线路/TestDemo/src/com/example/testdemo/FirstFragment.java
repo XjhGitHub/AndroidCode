@@ -2,6 +2,7 @@ package com.example.testdemo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.testdemo.appshare.Hello;
 import com.example.testdemo.cpp.CppActivity;
 import com.example.testdemo.first.base.ProgressActivity;
 import com.example.testdemo.first.base.SeekBarActivity;
@@ -40,6 +42,8 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	private Button fir_button8;
 	private Button fir_button9;
 	private Button fir_button10;
+	private Button fir_button11;
+	private Button fir_button12;
 	
 	private ScrollView mScrollView;
 	
@@ -84,6 +88,12 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		fir_button10 = (Button) mView.findViewById(R.id.fir_button10);
 		fir_button10.setOnClickListener(this);
 		
+		fir_button11 = (Button) mView.findViewById(R.id.fir_button11);
+		fir_button11.setOnClickListener(this);
+		
+		fir_button12 = (Button) mView.findViewById(R.id.fir_button12);
+		fir_button12.setOnClickListener(this);
+		
 		mScrollView = (ScrollView) mView.findViewById(R.id.scrollView);
 		mScrollView.setOnTouchListener(new OnTouchListener() {
 			
@@ -127,6 +137,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		});
 	}
 
+	
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
@@ -161,6 +172,17 @@ public class FirstFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.fir_button10:
 			startActivity(new Intent(mContext, CppActivity.class));
+			break;	
+		case R.id.fir_button11:
+			//通过Action启动
+//			startActivity(new Intent("com.example.testdemo.appshare.Main1"));
+			//通过data,区分相同的Action
+			startActivity(new Intent("com.example.testdemo.appshare.Main1",Uri.parse("app://hello")));
+			break;
+		case R.id.fir_button12:
+			Hello.sayHello(mContext);
+			//外部应用需要添加权限
+			startActivity(new Intent("com.example.testdemo.appshare.Main1",Uri.parse("app://hello")));
 			break;	
 		default:
 			break;

@@ -80,6 +80,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="C/C++测试" />
+            <Button
+                android:id="@+id/fir_button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application共享数据" />
+            <Button
+                android:id="@+id/fir_button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="权限检查/给应用添加权限" />
         </LinearLayout>
     </ScrollView>
 
