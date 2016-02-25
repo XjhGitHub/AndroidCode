@@ -13,6 +13,7 @@
     <uses-permission android:name="com.example.testdemo.appshare.permission.SAY_HELLO"/>
 
     <!-- 自定义application -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:name="com.example.testdemo.appshare.App"
         android:allowBackup="true"
@@ -89,6 +90,12 @@
                 <data android:scheme="app"/>
             </intent-filter>
         </activity>
+        <activity android:name=".Media.MediaActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+    	 <activity android:name="com.example.testdemo.Media.VideoViewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
     	
     </application>
 

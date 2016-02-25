@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.file.FileActivity;
+import com.example.testdemo.Media.MediaActivity;
 import com.example.testdemo.second.base.DynamicFragmentActivity;
 import com.example.testdemo.second.base.StaticFragmentActivity;
 import com.example.testdemo.second.menu.MenuActivity;
@@ -26,6 +27,7 @@ public class ThirdFragment extends Fragment implements OnClickListener{
 	private Button thi_button4;
 	private Button thi_button5;
 	private Button thi_button6;
+	private Button thi_button7;
 	private View mView;
 	
 	private Context mContext;
@@ -57,6 +59,8 @@ public class ThirdFragment extends Fragment implements OnClickListener{
 		
 		thi_button6 = (Button) mView.findViewById(R.id.thi_button6);
 		thi_button6.setOnClickListener(this);
+		thi_button7 = (Button) mView.findViewById(R.id.thi_button7);
+		thi_button7.setOnClickListener(this);
 		
 	}
 
@@ -80,6 +84,9 @@ public class ThirdFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.thi_button6:
 			startActivity(new Intent(mContext, DynamicFragmentActivity.class));
+			break;
+		case R.id.thi_button7:
+			startActivity(new Intent(mContext, MediaActivity.class));
 			break;
 		default:
 			break;
