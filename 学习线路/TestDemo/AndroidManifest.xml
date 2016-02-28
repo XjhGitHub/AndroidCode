@@ -14,6 +14,7 @@
 
     <!-- 自定义application -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <application
         android:name="com.example.testdemo.appshare.App"
         android:allowBackup="true"
@@ -96,6 +97,8 @@
     	 <activity android:name="com.example.testdemo.Media.VideoViewActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+    	 <service android:name=".floatview.FloatService"></service>
+    	 <activity android:name=".floatview.FloatView"></activity>
     	
     </application>
 

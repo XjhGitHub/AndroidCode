@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.testdemo.floatview.FloatView;
 import com.example.testdemo.second.base.DynamicFragmentActivity;
 import com.example.testdemo.second.base.GalleryActivity;
 import com.example.testdemo.second.base.StaticFragmentActivity;
@@ -30,6 +31,7 @@ public class SecondFragment extends Fragment implements OnClickListener{
 	private Button button6;
 	private Button button7;
 	private Button button8;
+	private Button button9;
 	
 	private Context mContext;
 	
@@ -66,6 +68,9 @@ public class SecondFragment extends Fragment implements OnClickListener{
 		
 		button8 = (Button) mView.findViewById(R.id.button8);
 		button8.setOnClickListener(this);
+		
+		button9 = (Button) mView.findViewById(R.id.button9);
+		button9.setOnClickListener(this);
 	}
 
 	@Override
@@ -94,6 +99,9 @@ public class SecondFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.button8:
 			startActivity(new Intent(mContext, GalleryActivity.class));
+			break;
+		case R.id.button9:
+			startActivity(new Intent(mContext, FloatView.class));
 			break;
 		default:
 			break;
