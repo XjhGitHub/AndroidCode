@@ -15,6 +15,16 @@
     <!-- 自定义application -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    
+    <!-- 需求属性 -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    
     <application
         android:name="com.example.testdemo.appshare.App"
         android:allowBackup="true"
@@ -100,6 +110,9 @@
     	 <service android:name=".floatview.FloatService"></service>
     	 <activity android:name=".floatview.FloatView"></activity>
     	
+    	 <activity android:name="com.example.testdemo.flashing.FlashLightMainActivity"
+    	     android:screenOrientation="portrait"
+    	     android:theme="@style/FlashLightTheme"></activity>
     </application>
 
 </manifest>

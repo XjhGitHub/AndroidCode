@@ -18,6 +18,7 @@ import com.example.list.ListActivity;
 import com.example.luckypan.LuckyPanActivity;
 import com.example.recylerview.RecyclerActivity;
 import com.example.slidingMenu.SlidingActivity;
+import com.example.testdemo.flashing.FlashLightMainActivity;
 import com.example.treeview.TreeView;
 
 public class ForthFragment extends Fragment implements OnClickListener{
@@ -31,6 +32,7 @@ public class ForthFragment extends Fragment implements OnClickListener{
 	private Button for_button7;
 	private Button for_button8;
 	private Button for_button9;
+	private Button for_button10;
 	private View mView;
 	
 	private Context mContext;
@@ -71,6 +73,9 @@ public class ForthFragment extends Fragment implements OnClickListener{
 		
 		for_button9 = (Button) mView.findViewById(R.id.for_button9);
 		for_button9.setOnClickListener(this);
+		
+		for_button10 = (Button) mView.findViewById(R.id.for_button10);
+		for_button10.setOnClickListener(this);
 	}
 
 	@Override
@@ -102,6 +107,9 @@ public class ForthFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.for_button9:
 			startActivity(new Intent(mContext, GuaGuaActivity.class));
+			break;
+		case R.id.for_button10:
+			startActivity(new Intent(mContext, FlashLightMainActivity.class));
 			break;
 		default:
 			break;
